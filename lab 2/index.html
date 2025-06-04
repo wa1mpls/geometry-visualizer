@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+
+    <div id="menu">
+        <label for="shapeSelector">Chọn hình cần vẽ: </label>
+        <select id="shapeSelector">
+            <option value="line">Đường thẳng</option>
+            <option value="ellipse">Elip</option>
+            <option value="parabola">Parabol</option>
+            <option value="hyperbola">Hyperbol</option>
+        </select>
+
+        <br><br>
+
+        <label for="zoom">Tỷ lệ phóng to/thu nhỏ: </label>
+        <button onclick="setZoom(0.5)">0.5x</button>
+        <button onclick="setZoom(1)">1x</button>
+        <button onclick="setZoom(2)">2x</button>
+        <span id="zoomValue">Tỷ lệ: 1x</span>
+    </div>
+
+    <canvas id="myCanvas" width="800" height="600" style="border:1px solid black;"></canvas>
